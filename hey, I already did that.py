@@ -25,9 +25,6 @@ def kaprekar_map(x, b, init_k):
     asc = 0;  
     for i in range(init_k): 
         asc = asc * b + digits[i];  
-    #print(asc)
-    # Get all four dgits in descending order  
-    # in the form of number "desc"  
     digits.sort();  
     desc = 0;  
     for i in range(init_k-1, -1, -1): 
@@ -63,8 +60,5 @@ def solution(n, b):
 def main(): 
     print(solution(1211,10)) 
   
-  
-# Using the special variable  
-# __name__ 
 if __name__=="__main__": 
     main() 
